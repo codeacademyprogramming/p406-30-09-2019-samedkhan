@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+.button_style {
+  padding: 16px;
+  border: 1px solid lightgray;
+  background-color: #873996;
+  font-size: 16px;
+  color: #fff;
+}
+
+.button_style:hover {
+  background-color: #ffc80b;
+  color: red;
+}
+
+#careers .careers-list-test-img:hover:after {
+  background-color: red;
+}
+
+#careers .careers-list-test-img:after {
+  content: '';
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+#careers {
+  .careers-list {
+    &-test {
+      // careers-list-test
+      &-img {
+        &:hover {
+          &:after {
+            background-color: red;
+          }
+        }
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+}

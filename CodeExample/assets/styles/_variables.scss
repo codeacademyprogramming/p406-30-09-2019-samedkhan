@@ -1,0 +1,23 @@
+//Gradients
+$gradient-main:-webkit-linear-gradient(0deg, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
+//Colors
+$color-gray_darker:#393939;
+$color-digital-marketing:#873996;
+$color-programming:#0086cd;
+$color-design:#ffc80b;
+$color-sys-admin: #01a65a;
+$color-3d: #f0802b;
+$color-ms-office:#ec3725;
+$color-white:#fff;
+$color-gray-lighter:#e4e4e4;
+//Box-shadows
+$box-shadow_default: 2.424px 4.373px 17px 0 rgba(0, 0, 0, .14);
+//Fonts 
+$font-lato: 'Lato',
+sans-serif;
+$font-roboto: 'Roboto',
+sans-serif;
+//Base Size
+$base-size:4px;
+//Currently used font-family
+$base-font:$font-lato;

@@ -1,0 +1,7 @@
+@import '../variables/variables';
+.button_style {
+  padding: 20px 15px;
+  background-color: $color-pink;
+  color: $color-white;
+  border-radius: $border-radius-button;
+}

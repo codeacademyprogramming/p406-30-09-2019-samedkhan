@@ -1,0 +1,15 @@
+.button_style {
+  padding: 20px 15px;
+  background-color: #e3207b;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#home .home-intro .intro-details h3 {
+  font-size: 20px;
+}
+
+#contact .contact-list .list-item {
+  color: #222831;
+}
+/*# sourceMappingURL=style.css.map */

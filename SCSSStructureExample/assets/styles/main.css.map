@@ -1,0 +1,32 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "_variables.scss",
+        "fonts/_index.scss",
+        "fonts/_fonts.scss",
+        "fonts/_font-icons.scss",
+        "layouts/_index.scss",
+        "layouts/_header.scss",
+        "layouts/_footer.scss",
+        "components/_index.scss",
+        "components/_buttons.scss",
+        "components/_event-details.scss",
+        "components/_inputs.scss",
+        "components/_item-title.scss",
+        "components/_listener-item.scss",
+        "components/_person-details.scss",
+        "components/_section-heading.scss",
+        "components/_show-item.scss",
+        "components/_social-networks.scss",
+        "pages/_index.scss",
+        "pages/_contact.scss",
+        "pages/_djs.scss",
+        "pages/_events.scss",
+        "pages/_home.scss",
+        "pages/_shows.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
