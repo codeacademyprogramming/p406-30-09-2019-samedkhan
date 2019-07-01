@@ -11,11 +11,3 @@
 //MEDIA-QUERY
 @import './grid/custom_media';
 
-.nunito{
-    font-family: 'Nunito';
-    font-weight: 800;
-}
-.nunito::after{
-    content: $font-Flaticon-tv;
-    font-family: 'Flaticon'
-}

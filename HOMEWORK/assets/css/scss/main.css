@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Nunito';
   src: url("../fonts/NunitoSans-Regular.WOFF");
@@ -47,15 +48,6 @@ Creation date: 01/07/2019 12:14
   @font-face {
     font-family: "Flaticon";
     src: url("../fonts/flat-icon/Flaticon.svg") format("svg"); } }
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-size: 20px;
-  font-style: normal;
-  margin-left: 20px; }
-
 .fi:before {
   display: inline-block;
   font-family: "Flaticon";
@@ -104,3 +96,11 @@ Creation date: 01/07/2019 12:14
 
 .flaticon-keyboard-right-arrow-button:before {
   content: "\f10b"; }
+
+.nunito {
+  font-family: 'Nunito';
+  font-weight: 800; }
+
+.nunito::after {
+  content: "";
+  font-family: "Flaticon"; }
