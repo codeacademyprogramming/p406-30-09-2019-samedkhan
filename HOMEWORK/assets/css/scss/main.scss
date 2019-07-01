@@ -1,0 +1,21 @@
+//VARIABLES
+@import './variables';
+//FONTS
+@import './fonts/index';
+//PAGES
+@import './pages/index';
+//LAYOUTS
+@import './layouts/index';
+//COMPONENTS
+@import './components/index';
+//MEDIA-QUERY
+@import './grid/custom_media';
+
+.nunito{
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+.nunito::after{
+    content: $font-Flaticon-tv;
+    font-family: 'Flaticon'
+}
