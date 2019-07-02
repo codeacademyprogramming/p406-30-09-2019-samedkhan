@@ -1,11 +1,9 @@
 #header{
+    background-color: $color-matte;
     .header_panel{
+        display:flex;
+        justify-content: center;
         
-        .logo_block{
-
-        }
-        .responsive_block{
-
-        }
+        
     }
 }

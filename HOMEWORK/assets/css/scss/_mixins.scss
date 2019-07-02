@@ -1,0 +1,28 @@
+@mixin section_header_h1 {
+    font-family: $font-navmenu-dejee_section-header_events-header; //oswald
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-section_header_navitem-hover; //white
+    position: relative;
+    padding: 0 0 8px;
+}
+@mixin section_header_h1_before{
+    content: '';
+    background: $color-pink;
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;    
+}
+@mixin section_header_desc {
+    font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+    color: $color-text !important;
+    font-size: 6px;
+    padding: 0 0 16px;
+}
+
+@mixin navmenu_item_hover{
+    color:$color-section_header_navitem-hover; //white
+    transition: .3s all ease;
+}
+

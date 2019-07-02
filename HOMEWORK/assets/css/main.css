@@ -104,3 +104,66 @@ Creation date: 01/07/2019 12:14
 
 .flaticon-keyboard-right-arrow-button:before {
   content: "\f10b"; }
+
+#header {
+  background-color: #333333; }
+  #header .header_panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.button {
+  text-align: center;
+  background-color: #e3207b;
+  border-radius: 2px;
+  padding: 6px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
+  .button:hover {
+    background-color: #aa0c57;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease; }
+  .button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Nunito";
+    font-size: 6px; }
+
+.section_header .header_name {
+  padding: 0 0 12px; }
+  .section_header .header_name h1 {
+    font-family: "Oswald";
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: relative;
+    padding: 0 0 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .section_header .header_name h1::before {
+      content: '';
+      background: #e3207b;
+      width: 20px;
+      height: 1px;
+      position: absolute;
+      bottom: 0; }
+.section_header .header_desc {
+  font-family: "Nunito";
+  color: #999 !important;
+  font-size: 6px;
+  padding: 0 0 16px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+// SECTION HEADER   
+.section_header{
+    .header_name{
+        padding: 0 0 12px;                
+        h1{
+            @include section_header_h1;
+            display: flex;
+            justify-content: center;
+            &::before{
+               @include section_header_h1_before;
+            }
+        }                
+    }
+    .header_desc{
+        @include section_header_desc;
+    } 
+}
