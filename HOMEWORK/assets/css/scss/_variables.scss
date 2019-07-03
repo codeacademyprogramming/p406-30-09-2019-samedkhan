@@ -15,11 +15,12 @@ $font-Flaticon-keyboard-right-arrow-button: "\f10b";
 //COLORS
 $color-green: #7ac64d;
 $color-pink:#e3207b;
+$color-pink-hover: #aa0c57;
 $color-matte:#333333;
 $color-dark:#222;
 $color-text: #999;
 $color-background:#222831;
-$color-section_header_navitem-hover:#FFFFFF;
+$color-section_header_navitem-hover:#FFFFFF; //WHITE
 $color-navmenu_item: rgba(255,255,255,0.6);
 
 //FONTS TYPE
@@ -27,4 +28,5 @@ $font-header_dejee: 'Open-Sans';
 $font-navmenu-dejee_section-header_events-header: 'Oswald';
 $font-navmenu-item_text_buttons_person-text_events-desc: 'Nunito';
 
-
+//TRANSITION
+$transition-hover: .3s all ease;

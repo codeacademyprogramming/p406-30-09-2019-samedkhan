@@ -1,21 +1,19 @@
 .button{
     text-align: center;
-    background-color: #e3207b;
-    border-radius: 2px;
-    padding: 6px 6px;
-    display: flex;
-    align-items: center; 
-    transition: .3s all ease;
+    background-color: $color-pink;
+    border-radius: 2px; 
+    padding: 16px 24px;  
+    transition: $transition-hover;
     &:hover{
-        background-color: #aa0c57;
-        transition: .3s all ease;
+        background-color: $color-pink-hover;
+        transition: $transition-hover;
     }     
     a{
         text-decoration: none;
-        color: $color-section_header_navitem-hover; //white
-        
+        color: $color-section_header_navitem-hover; //white        
         font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
-        font-size:6px;
+        font-size:16px;
+        
         
     }     
 

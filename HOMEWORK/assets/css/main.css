@@ -52,9 +52,7 @@ Creation date: 01/07/2019 12:14
 [class^="flaticon-"]:after,
 [class*=" flaticon-"]:after {
   font-family: Flaticon;
-  font-size: 20px;
-  font-style: normal;
-  margin-left: 20px; }
+  font-style: normal; }
 
 .fi:before {
   display: inline-block;
@@ -119,34 +117,30 @@ Creation date: 01/07/2019 12:14
   text-align: center;
   background-color: #e3207b;
   border-radius: 2px;
-  padding: 6px 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease; }
+  padding: 16px 24px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
   .button:hover {
     background-color: #aa0c57;
-    -webkit-transition: .3s all ease;
-    transition: .3s all ease; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .button a {
     text-decoration: none;
     color: #FFFFFF;
     font-family: "Nunito";
-    font-size: 6px; }
+    font-size: 16px; }
 
 .section_header .header_name {
   padding: 0 0 12px; }
   .section_header .header_name h1 {
     font-family: "Oswald";
-    font-size: 12px;
+    letter-spacing: 16px;
+    font-size: 32px;
     font-weight: 600;
     color: #FFFFFF;
     position: relative;
-    padding: 0 0 8px;
+    padding: 0 0 20px;
+    margin: 0 0 28px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156,14 +150,38 @@ Creation date: 01/07/2019 12:14
     .section_header .header_name h1::before {
       content: '';
       background: #e3207b;
-      width: 20px;
-      height: 1px;
+      width: 70px;
+      height: 2px;
       position: absolute;
       bottom: 0; }
 .section_header .header_desc {
   font-family: "Nunito";
-  color: #999 !important;
-  font-size: 6px;
-  padding: 0 0 16px; }
+  color: #999;
+  font-size: 17.6px;
+  padding: 0 0 16px;
+  text-align: center;
+  line-height: 30px; }
 
-/*# sourceMappingURL=main.css.map */
+#social {
+  background-color: #e3207b; }
+  #social .social_panel_full ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #social .social_panel_full ul li {
+      display: inline-block;
+      padding: 25px 70px;
+      text-align: center;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+      #social .social_panel_full ul li:hover {
+        background-color: #aa0c57;
+        -webkit-transition: 0.3s all ease;
+        transition: 0.3s all ease; }
+      #social .social_panel_full ul li a {
+        text-decoration: none;
+        color: #FFFFFF; }
+        #social .social_panel_full ul li a i {
+          font-size: 20px; }
