@@ -1,3 +1,5 @@
+//PARAMETERS
+@import './parameters';
 //VARIABLES
 @import './variables';
 //MIXINS
@@ -13,3 +15,9 @@
 //MEDIA-QUERY
 @import './grid/custom_media';
 
+#footer, #djs{
+    background-color: $color-footer;
+}
+#events{
+    background-color: $color-listeners-events;
+}
