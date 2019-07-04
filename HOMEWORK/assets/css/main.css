@@ -131,23 +131,6 @@ Creation date: 01/07/2019 12:14
 .icon-heart:before {
   content: "\e9da"; }
 
-.djs_item {
-  position: relative; }
-  .djs_item .djs_image img {
-    width: 100%; }
-  .djs_item .overflow {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(225, 32, 123, 0.7);
-    text-align: center;
-    color: #FFFFFF;
-    font-family: "Nunito"; }
-    .djs_item .overflow ul {
-      line-height: 30px; }
-
 #header {
   background-color: #333333; }
   #header .header_panel {
@@ -286,6 +269,62 @@ Creation date: 01/07/2019 12:14
     font-family: "Nunito";
     font-size: 16px; }
 
+.djs_item {
+  position: relative;
+  margin-top: 50px; }
+  .djs_item .djs_image {
+    overflow: hidden; }
+    .djs_item .djs_image img {
+      width: 100%;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+  .djs_item:hover .djs_image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+  .djs_item:hover .overflow {
+    opacity: 1;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .djs_item:hover .overflow ul {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+  .djs_item .overflow {
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(225, 32, 123, 0.7);
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Nunito"; }
+    .djs_item .overflow ul {
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+      line-height: 30px;
+      text-align: center;
+      padding: 20% 7% 0% 7%;
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px); }
+      .djs_item .overflow ul li {
+        font-size: 18px;
+        padding: 15px 0 0 0; }
+        .djs_item .overflow ul li h1 {
+          font-size: 25px; }
+      .djs_item .overflow ul ul {
+        padding: 0;
+        -webkit-transform: none;
+                transform: none; }
+        .djs_item .overflow ul ul li a {
+          color: #FFFFFF; }
+
 .events_item {
   padding: 20px 5px; }
   .events_item .events_image img {
@@ -310,11 +349,23 @@ Creation date: 01/07/2019 12:14
           -webkit-transition: 0.3s all ease;
           transition: 0.3s all ease; }
 
+.listerners_item {
+  background-color: #FFFFFF;
+  padding: 50px; }
+  .listerners_item .listeners_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 0 auto; }
+    .listerners_item .listeners_image img {
+      width: 100%;
+      border-radius: 100%; }
+
 .section_header .header_name {
   padding: 0 0 12px; }
   .section_header .header_name h1 {
     font-family: "Oswald";
-    letter-spacing: 16px;
+    letter-spacing: 10px;
     font-size: 32px;
     font-weight: 600;
     color: #FFFFFF;
@@ -424,7 +475,5 @@ Creation date: 01/07/2019 12:14
 #footer, #djs {
   background-color: #222831; }
 
-#events {
+#events, #listeners {
   background-color: #13171d; }
-
-/*# sourceMappingURL=main.css.map */

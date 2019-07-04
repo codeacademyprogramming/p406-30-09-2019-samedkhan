@@ -1,0 +1,64 @@
+.djs_item{
+    position:relative;
+    margin-top:50px;
+    .djs_image{
+        overflow: hidden;
+        img{
+            width: 100%;
+            transition: $transition-hover;
+        }
+    }
+    &:hover{
+        .djs_image{
+            
+            img{
+                transform: scale(1.1);
+                transition: $transition-hover;                
+            }
+        }
+        .overflow{
+            opacity:1;
+            transition: $transition-hover;
+            ul{
+                transform: translateX(0);
+                transition: $transition-hover;
+            }
+        }
+    }
+    .overflow{
+        transition: $transition-hover;
+        opacity:0;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color: rgba(225, 32, 123, 0.7);
+        text-align: center;
+        color:$color-section_header_navitem-hover;
+        font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+        ul{
+            transition: $transition-hover;
+            line-height: 30px;
+            text-align: center;
+            padding: 20% 7% 0% 7%; 
+            transform: translateY(50px);
+            li{
+                font-size: 18px;
+                padding: 15px 0 0 0;
+                h1{
+                    font-size:25px;
+                }                
+            }
+            ul{
+                padding: 0;
+                transform: none;
+                li{
+                    a{
+                        color: $color-section_header_navitem-hover;;
+                    }
+                }
+            }
+        }
+    }
+}
