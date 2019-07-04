@@ -1,0 +1,147 @@
+
+.navpanel{
+    display:flex;
+    justify-content: space-between;
+    
+    .logo{
+        font-family:$font-navmenu-dejee_section-header_events-header; 
+        color:$color-section_header_navitem-hover;
+        font-size:32px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        position: relative;
+        &::after{
+            content: '';
+            width: 7px;
+            height: 7px;
+            background-color: red;
+            position: absolute;
+            right: -10px;
+            bottom: 0px;
+        }
+    }
+    .navmenu{        
+        ul{
+            li{
+                display: inline-block;
+                padding: 10px 0px 0px 40px;
+                position:relative;
+                &:first-child{
+                    a{
+                        color: $color-section_header_navitem-hover;
+                    }
+                }
+                &:nth-child(3):hover{
+                    .submenu{
+                        opacity:1;
+                        transform: translateY(-35px);
+                        transition: $transition-hover;
+                        
+                    }
+                }
+                &:nth-child(3)::after{
+                    content:'';
+                    border: solid $color-navmenu_item;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    position:relative;
+                    top: -2px;
+                    right:-10px;  
+                }
+                &:hover{
+                    &::after{
+                        border-color: $color-section_header_navitem-hover;
+                        transition: $transition-hover;
+                    }
+                }
+                .submenu{
+                    opacity:0;
+                    background-color:  $color-section_header_navitem-hover;
+                    width:max-content;
+                    position: absolute;
+                    line-height: 30px;
+                    top: 70px;
+                    padding: 10px 20px;
+                    border-radius: 7px;
+                    &::after{
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 15px 15px 16px;
+                        border-color: transparent transparent $color-section_header_navitem-hover transparent;
+                        top: -12px;
+                        position: absolute;
+                        left: 20px;
+                    }
+                    li{
+
+                        padding-left:0;
+                        display: block;
+                        &:nth-child(4)::after{
+                            content:'';
+                            position: absolute;
+                            border: solid $color-text;
+                            border-width: 0 3px 3px 0;
+                            display: inline-block;
+                            padding: 3px;
+                            transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                            right: -10px;
+                            top: 10px;
+                        }
+                        &:nth-child(4):hover{
+                            .second_submenu{
+                                opacity:1;
+                                transform: translateY(-40px);
+                                transition: $transition-hover;
+                               
+                            }
+                        }
+                        a{
+                            color: $color-text;
+                        }
+                        
+                    }
+                    .second_submenu{
+                        position:absolute;
+                        
+                        opacity: 0;
+                        background-color: #FFFFFF;
+                        width: max-content;
+                        position: absolute;
+                        line-height: 30px;
+                        padding: 10px 40px 10px 20px;
+                        border-radius: 7px;
+                        right: -180px;
+                        bottom: -115px;
+                        transition: $transition-hover;
+                        
+                    }
+                    
+                   
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-navmenu_item;
+                    font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+                    font-size:17.6px;
+                    transition: $transition-hover;
+                    &:hover{
+                        color: $color-section_header_navitem-hover;
+                        transition: $transition-hover;
+                        
+                    }
+                   
+                   
+                }
+                
+               
+            }
+        }
+    }    
+
+}

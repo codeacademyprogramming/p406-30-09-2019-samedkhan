@@ -1,0 +1,25 @@
+.item_title{
+    position: absolute;
+    color:white;
+    left:0;
+    bottom:0;
+    .title_type{
+        padding: 8px 9px;
+        background-color: $color-pink;
+        font-family: $font-navmenu-dejee_section-header_events-header;
+        font-size: 22px;
+        font-weight: bolder;
+        letter-spacing: .05em;    
+        position: absolute;
+        top: -35px;
+        left: 0;
+    }
+    .title_desc{
+        font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+        background-color: black;
+        padding: 0px 20px 0px 10px;
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: .15em;            
+    }
+}

@@ -1,0 +1,21 @@
+.show_item{
+    padding:50px 0px 0px 0px;
+    &:hover{
+        .item_image{
+            img{
+                transform: scale(1);
+                transition: $transition-hover;
+            }
+        }
+    }
+    .item_image{
+        overflow:hidden;
+        max-height: 350px;
+        position:relative;        
+        img{
+            width:100%;
+            transform: scale(1.15);
+            transition: $transition-hover;            
+        }
+    }
+}

@@ -4,19 +4,14 @@
   border: 1px solid lightgray;
   background-color: #873996;
   font-size: 16px;
-  color: #fff;
-}
-
-.button_style:hover {
-  background-color: #ffc80b;
-  color: red;
-}
+  color: #fff; }
+  .button_style:hover {
+    background-color: #ffc80b;
+    color: red; }
 
 #careers .careers-list-test-img:hover:after {
-  background-color: red;
-}
-
+  background-color: red; }
 #careers .careers-list-test-img:after {
-  content: '';
-}
+  content: ''; }
+
 /*# sourceMappingURL=main.css.map */

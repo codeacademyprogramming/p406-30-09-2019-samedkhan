@@ -1,20 +1,7 @@
 {
-    "version": 3,
-    "mappings": "AEAA,OAAO,CAAC,gFAAI;AEAZ,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAY;EACrB,MAAM,EAAE,mBAAmB;EAC3B,gBAAgB,EHCO,OAAO;EGA9B,SAAS,EAAE,IAAI;EACf,KAAK,EHKM,IAAI;CGAhB;;AAVD,AAME,aANW,AAMV,MAAM,CAAC;EACN,gBAAgB,EHDN,OAAO;EGEjB,KAAK,EAAE,GAAG;CACX;;AMTH,AAMU,QANF,CAID,sBAAI,AACF,MAAM,AACJ,MAAM,CAAC;EACN,gBAAgB,EAAE,GAAG;CACtB;;AARX,AAUQ,QAVA,CAID,sBAAI,AAMF,MAAM,CAAC;EACN,OAAO,EAAE,EAAE;CACZ",
-    "sources": [
-        "main.scss",
-        "_variables.scss",
-        "fonts/_index.scss",
-        "components/_index.scss",
-        "components/_buttons.scss",
-        "components/_inputs.scss",
-        "components/_section-heading.scss",
-        "components/_main-slider.scss",
-        "components/_services-with-icon.scss",
-        "components/_class-item.scss",
-        "components/_careers-item.scss",
-        "pages/_index.scss"
-    ],
-    "names": [],
-    "file": "main.css"
+"version": 3,
+"mappings": "AAAQ,wFAAgF;ACAxF,aAAc;EACZ,OAAO,EAAE,IAAY;EACrB,MAAM,EAAE,mBAAmB;EAC3B,gBAAgB,ECCO,OAAO;EDA9B,SAAS,EAAE,IAAI;EACf,KAAK,ECKM,IAAI;EDJf,mBAAQ;IACN,gBAAgB,ECDN,OAAO;IDEjB,KAAK,EAAE,GAAG;;AEFJ,2CAAQ;EACN,gBAAgB,EAAE,GAAG;AAGzB,qCAAQ;EACN,OAAO,EAAE,EAAE",
+"sources": ["fonts/_index.scss","components/_buttons.scss","_variables.scss","components/_careers-item.scss"],
+"names": [],
+"file": "main.css"
 }

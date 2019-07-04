@@ -43,3 +43,16 @@
     transition: .3s all ease;
 }
 
+
+    @keyframes example {
+        from {
+            opacity: 0;
+            top: 70px;
+        }
+        to {
+            opacity:1;
+            top: 20px;
+            transition: $transition-hover;
+            animation-fill-mode: forwards;
+        }
+      }

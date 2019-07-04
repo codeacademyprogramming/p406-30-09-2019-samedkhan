@@ -4,6 +4,29 @@
 .p-50 {
   padding: 50px 0px; }
 
+@-webkit-keyframes example {
+  from {
+    opacity: 0;
+    top: 70px; }
+  to {
+    opacity: 1;
+    top: 20px;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; } }
+
+@keyframes example {
+  from {
+    opacity: 0;
+    top: 70px; }
+  to {
+    opacity: 1;
+    top: 20px;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; } }
 @font-face {
   font-family: 'Nunito';
   src: url("../fonts/NunitoSans-Regular.WOFF");
@@ -253,6 +276,10 @@ Creation date: 01/07/2019 12:14
     margin-left: 5px; }
 
 .button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
   text-align: center;
   background-color: #e3207b;
   border-radius: 2px;
@@ -441,6 +468,148 @@ Creation date: 01/07/2019 12:14
     .social_mini li a i {
       font-size: 17px; }
 
+.navpanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .navpanel .logo {
+    font-family: "Oswald";
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    position: relative; }
+    .navpanel .logo::after {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background-color: red;
+      position: absolute;
+      right: -10px;
+      bottom: 0px; }
+  .navpanel .navmenu ul li {
+    display: inline-block;
+    padding: 10px 0px 0px 40px;
+    position: relative; }
+    .navpanel .navmenu ul li:first-child a {
+      color: #FFFFFF; }
+    .navpanel .navmenu ul li:nth-child(3):hover .submenu {
+      opacity: 1;
+      -webkit-transform: translateY(-35px);
+              transform: translateY(-35px);
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .navpanel .navmenu ul li:nth-child(3)::after {
+      content: '';
+      border: solid rgba(255, 255, 255, 0.6);
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      position: relative;
+      top: -2px;
+      right: -10px; }
+    .navpanel .navmenu ul li:hover::after {
+      border-color: #FFFFFF;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .navpanel .navmenu ul li .submenu {
+      opacity: 0;
+      background-color: #FFFFFF;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      position: absolute;
+      line-height: 30px;
+      top: 70px;
+      padding: 10px 20px;
+      border-radius: 7px; }
+      .navpanel .navmenu ul li .submenu::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 15px 15px 16px;
+        border-color: transparent transparent #FFFFFF transparent;
+        top: -12px;
+        position: absolute;
+        left: 20px; }
+      .navpanel .navmenu ul li .submenu li {
+        padding-left: 0;
+        display: block; }
+        .navpanel .navmenu ul li .submenu li:nth-child(4)::after {
+          content: '';
+          position: absolute;
+          border: solid #999;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          right: -10px;
+          top: 10px; }
+        .navpanel .navmenu ul li .submenu li:nth-child(4):hover .second_submenu {
+          opacity: 1;
+          -webkit-transform: translateY(-40px);
+                  transform: translateY(-40px);
+          -webkit-transition: 0.3s all ease;
+          transition: 0.3s all ease; }
+        .navpanel .navmenu ul li .submenu li a {
+          color: #999; }
+      .navpanel .navmenu ul li .submenu .second_submenu {
+        position: absolute;
+        opacity: 0;
+        background-color: #FFFFFF;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        position: absolute;
+        line-height: 30px;
+        padding: 10px 40px 10px 20px;
+        border-radius: 7px;
+        right: -180px;
+        bottom: -115px;
+        -webkit-transition: 0.3s all ease;
+        transition: 0.3s all ease; }
+    .navpanel .navmenu ul li a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
+      font-family: "Nunito";
+      font-size: 17.6px;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+      .navpanel .navmenu ul li a:hover {
+        color: #FFFFFF;
+        -webkit-transition: 0.3s all ease;
+        transition: 0.3s all ease; }
+
+.item_title {
+  position: absolute;
+  color: white;
+  left: 0;
+  bottom: 0; }
+  .item_title .title_type {
+    padding: 8px 9px;
+    background-color: #e3207b;
+    font-family: "Oswald";
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: .05em;
+    position: absolute;
+    top: -35px;
+    left: 0; }
+  .item_title .title_desc {
+    font-family: "Nunito";
+    background-color: black;
+    padding: 0px 20px 0px 10px;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: .15em; }
+
 .streaming_watch .streaming_image {
   position: relative; }
   .streaming_watch .streaming_image img {
@@ -485,10 +654,72 @@ Creation date: 01/07/2019 12:14
       bottom: 0;
       width: 40px !important; }
 
-.shows_item {
+.show_item {
   padding: 50px 0px 0px 0px; }
-  .shows_item .item_image img {
-    width: 100%; }
+  .show_item:hover .item_image img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+  .show_item .item_image {
+    overflow: hidden;
+    max-height: 350px;
+    position: relative; }
+    .show_item .item_image img {
+      width: 100%;
+      -webkit-transform: scale(1.15);
+              transform: scale(1.15);
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+
+#podcast .show_item {
+  padding: 25px 0px 0px 0px; }
+  #podcast .show_item .item_title {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
+    #podcast .show_item .item_title .title_type {
+      position: relative;
+      top: 0;
+      left: 0; }
+#podcast .show_item_full {
+  padding: 25px 25px 0px 0px;
+  position: relative; }
+  #podcast .show_item_full:hover .item_image img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+  #podcast .show_item_full .item_image {
+    height: 750px;
+    overflow: hidden; }
+    #podcast .show_item_full .item_image img {
+      width: 100%;
+      -webkit-transform: scale(1.15);
+              transform: scale(1.15);
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    #podcast .show_item_full .item_image .item_title {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
+      #podcast .show_item_full .item_image .item_title .title_type {
+        position: relative;
+        top: 0;
+        left: 0; }
+
+#intro {
+  padding: 50px 0px 200px; }
+
+.intro_header {
+  text-align: center;
+  font-family: "Oswald";
+  color: #FFFFFF;
+  font-size: 64px;
+  letter-spacing: 15px;
+  padding: 150px 180px 50px;
+  line-height: 100px;
+  font-weight: bold; }
 
 #footer, #djs, #podcast, #shows {
   background-color: #222831; }

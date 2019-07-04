@@ -1,13 +1,7 @@
 {
-    "version": 3,
-    "mappings": "ACCA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,SAAS;EAClB,gBAAgB,ECDL,OAAO;EDElB,KAAK,ECCO,IAAI;EDAhB,aAAa,ECMO,GAAG;CDLxB",
-    "sources": [
-        "index.scss",
-        "_button.scss",
-        "../variables/variables.scss",
-        "_input.scss",
-        "_section-heading.scss"
-    ],
-    "names": [],
-    "file": "index.css"
+"version": 3,
+"mappings": "AACA,aAAc;EACZ,OAAO,EAAE,SAAS;EAClB,gBAAgB,ECDL,OAAO;EDElB,KAAK,ECCO,IAAI;EDAhB,aAAa,ECMO,GAAG",
+"sources": ["_button.scss","../variables/variables.scss"],
+"names": [],
+"file": "index.css"
 }
