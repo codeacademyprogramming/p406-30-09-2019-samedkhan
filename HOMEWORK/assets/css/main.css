@@ -351,7 +351,8 @@ Creation date: 01/07/2019 12:14
 
 .listerners_item {
   background-color: #FFFFFF;
-  padding: 50px; }
+  padding: 50px;
+  margin: 50px 0px; }
   .listerners_item .listeners_image {
     width: 150px;
     height: 150px;
@@ -360,6 +361,18 @@ Creation date: 01/07/2019 12:14
     .listerners_item .listeners_image img {
       width: 100%;
       border-radius: 100%; }
+  .listerners_item .listeners_desc {
+    line-height: 30px;
+    padding: 15px 10px;
+    text-align: center;
+    color: #333333;
+    font-family: "Nunito"; }
+    .listerners_item .listeners_desc h1 {
+      font-size: 22px;
+      margin: 15px 0px; }
+    .listerners_item .listeners_desc p {
+      font-style: italic;
+      font-size: 18px; }
 
 .section_header .header_name {
   padding: 0 0 12px; }
@@ -472,8 +485,15 @@ Creation date: 01/07/2019 12:14
       bottom: 0;
       width: 40px !important; }
 
-#footer, #djs {
+.shows_item {
+  padding: 50px 0px 0px 0px; }
+  .shows_item .item_image img {
+    width: 100%; }
+
+#footer, #djs, #podcast, #shows {
   background-color: #222831; }
 
 #events, #listeners {
   background-color: #13171d; }
+
+/*# sourceMappingURL=main.css.map */
