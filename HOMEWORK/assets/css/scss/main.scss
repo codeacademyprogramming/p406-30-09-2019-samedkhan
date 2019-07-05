@@ -12,8 +12,7 @@
 @import './layouts/index';
 //COMPONENTS
 @import './components/index';
-//MEDIA-QUERY
-@import './grid/custom_media';
+
 
 #footer, #djs, #podcast, #shows{
     background-color: $color-footer;

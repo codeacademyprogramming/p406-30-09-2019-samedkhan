@@ -45,4 +45,45 @@
             
            
             
+}
+
+@media (max-width: 768px) {
+    .show_item_full{
+        padding: 25px 0px !important;
+        .item_image{
+            max-height: 350px;
+            overflow: hidden;
+            img{
+                width:100%;
+            }
+        }
+        .item_title{
+            bottom:25px;
+        }
     }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .show_item_full{
+        padding:  0px !important;
+        .item_image{
+            max-height: 600px;
+            overflow: hidden;
+            img{
+                width:100%;
+            }
+        }
+        .item_title{
+            bottom:20px;
+        }
+    }
+    .show_item{
+        padding: 0px !important;
+        .item_image{
+            max-height: 290px;
+        }
+        .item_title{
+            bottom:-1px;
+        }
+    }
+}

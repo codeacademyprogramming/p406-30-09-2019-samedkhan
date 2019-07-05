@@ -32,11 +32,14 @@
                 border-radius: 2px;
                 background-color: $color-footer;
                 color:white;
+                display: block;
+                
                 &::placeholder{
                     font-style: italic;
                     font-size: 15px;
                 }
             }
+           
             input[type="submit"]{
                 color:white;
                 background-color: $color-pink;
@@ -56,5 +59,32 @@
                 margin-right: 5px;
                 margin-left: 5px;
             }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .column_desc{
+        input[type="text"]{
+            width:70%;
+        }
+        flex-wrap: wrap;
+        ul{
+            width:100%;
+        }
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .column_desc{
+        input[type="text"]{
+            width:70%;
+        }
+        
+        ul{
+            width:50%;
+        }
     }
 }

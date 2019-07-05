@@ -19,11 +19,10 @@
 @mixin section_header_desc {
     font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
     color: $color-text;
-    font-size: 17.6px;
+    font-size: 18.6px;
     padding: 0 0 16px;
     text-align: center;
-    line-height: 30px;
-    width: 45%;
+    line-height: 30px;    
     margin: 0 auto;
 }
 
@@ -38,21 +37,3 @@
     margin: 0 0 28px;
 }
 
-@mixin navmenu_item_hover{
-    color:$color-section_header_navitem-hover; //white
-    transition: .3s all ease;
-}
-
-
-    @keyframes example {
-        from {
-            opacity: 0;
-            top: 70px;
-        }
-        to {
-            opacity:1;
-            top: 20px;
-            transition: $transition-hover;
-            animation-fill-mode: forwards;
-        }
-      }
