@@ -1,0 +1,90 @@
+#footer{
+    
+    .footer_item{
+        margin: 40px 0px 40px 0px;
+        .column_desc{
+            color: $color-text;
+            font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+            line-height: 30px;
+            font-size: 17.6px;
+            display: flex;
+            justify-content: flex-start;
+            ul{
+                padding: 0px 50px 0px 0px;
+                li{
+                    padding: 0px 0px 10px 0px;
+                    a{
+                        text-decoration: none;
+                        color: $color-navmenu_item;
+                        font-size: 18px;
+                        transition: $transition-hover;
+                        &:hover{
+                            color: $color-section_header_navitem-hover;
+                            transition: $transition-hover;
+                        }
+                    }
+                }
+            }
+            input{
+                padding: 15px 20px;
+                outline: none;
+                border: 1px solid white;
+                border-radius: 2px;
+                background-color: $color-footer;
+                color:white;
+                display: block;
+                
+                &::placeholder{
+                    font-style: italic;
+                    font-size: 15px;
+                }
+            }
+           
+            input[type="submit"]{
+                color:white;
+                background-color: $color-pink;
+                border-color: $color-pink;
+                font-size: 15px;
+            }
+        }
+    }
+    .footer_signature{
+        color: $color-text;
+            font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+            line-height: 30px;
+            font-size: 17.6px;
+            text-align: center;
+            span{
+                color:red;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .column_desc{
+        input[type="text"]{
+            width:70%;
+        }
+        flex-wrap: wrap;
+        ul{
+            width:100%;
+        }
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .column_desc{
+        input[type="text"]{
+            width:70%;
+        }
+        
+        ul{
+            width:50%;
+        }
+    }
+}

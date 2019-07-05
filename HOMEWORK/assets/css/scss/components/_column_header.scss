@@ -1,0 +1,14 @@
+.column_header{
+    .header_name{
+        padding: 0 0 12px; 
+        h1{
+            @include column_header_h1;
+            &::before{
+                @include section_header_h1_before;
+                width:40px !important;
+             }
+        }
+    }
+    
+    
+}

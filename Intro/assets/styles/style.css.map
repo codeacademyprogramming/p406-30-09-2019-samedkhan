@@ -1,19 +1,7 @@
 {
-    "version": 3,
-    "mappings": "AECA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,SAAS;EAClB,gBAAgB,ECDL,OAAO;EDElB,KAAK,ECCO,IAAI;EDAhB,aAAa,ECMO,GAAG;CDLxB;;AKND,AAGM,KAHD,CACH,WAAW,CACT,cAAc,CACZ,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;CAChB;;AEHP,AAEQ,QAFA,CACJ,aAAa,CACT,UAAU,CAAA;EACN,KAAK,ENFG,OAAO;CMGlB",
-    "sources": [
-        "style.scss",
-        "components/index.scss",
-        "components/_button.scss",
-        "variables/variables.scss",
-        "components/_input.scss",
-        "components/_section-heading.scss",
-        "pages/index.scss",
-        "pages/_home.scss",
-        "pages/_events.scss",
-        "pages/_contact.scss",
-        "variables/variables.scss"
-    ],
-    "names": [],
-    "file": "style.css"
+"version": 3,
+"mappings": "AACA,aAAc;EACZ,OAAO,EAAE,SAAS;EAClB,gBAAgB,ECDL,OAAO;EDElB,KAAK,ECCO,IAAI;EDAhB,aAAa,ECMO,GAAG;;ACRnB,mCAAG;EACD,SAAS,EAAE,IAAI;;ACAf,iCAAU;EACN,KAAK,EFFG,OAAO",
+"sources": ["components/_button.scss","variables/variables.scss","pages/_home.scss","pages/_contact.scss"],
+"names": [],
+"file": "style.css"
 }

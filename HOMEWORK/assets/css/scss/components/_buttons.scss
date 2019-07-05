@@ -1,0 +1,22 @@
+.button{
+    width:max-content;
+    margin:0 auto;
+    text-align: center;
+    background-color: $color-pink;
+    border-radius: 2px; 
+    padding: 16px 24px;  
+    transition: $transition-hover;
+    &:hover{
+        background-color: $color-pink-hover;
+        transition: $transition-hover;
+    }     
+    a{
+        text-decoration: none;
+        color: $color-section_header_navitem-hover; //white        
+        font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+        font-size:16px;
+        
+        
+    }     
+
+}

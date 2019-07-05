@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -14,61 +13,46 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .material-input {
-  position: relative;
-}
+  position: relative; }
+  .material-input-key {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 7px 5px;
+    margin-bottom: 0; }
+    .material-input-key:focus + label:after, .material-input-key:focus + label:before {
+      width: 50%; }
+    .material-input-key:focus + label > .input-title {
+      top: 0;
+      font-size: 12px;
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%); }
+  .material-input label .input-title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    pointer-events: none;
+    -webkit-transition: .2s ease;
+    transition: .2s ease; }
+  .material-input label:after, .material-input label:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #6200EE;
+    bottom: 0;
+    -webkit-transition: .2s ease;
+    transition: .2s ease; }
+  .material-input label:after {
+    left: 50%; }
+  .material-input label:before {
+    right: 50%; }
 
-.material-input-key {
-  outline: none;
-  border: none;
-  border-bottom: 2px solid lightgrey;
-  font-size: 20px;
-  font-weight: 300;
-  padding: 7px 5px;
-  margin-bottom: 0;
-}
-
-.material-input-key:focus + label:after, .material-input-key:focus + label:before {
-  width: 50%;
-}
-
-.material-input-key:focus + label > .input-title {
-  top: 0;
-  font-size: 12px;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.material-input label .input-title {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  pointer-events: none;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
-}
-
-.material-input label:after, .material-input label:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #6200EE;
-  bottom: 0;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
-}
-
-.material-input label:after {
-  left: 50%;
-}
-
-.material-input label:before {
-  right: 50%;
-}
 /*# sourceMappingURL=main.css.map */

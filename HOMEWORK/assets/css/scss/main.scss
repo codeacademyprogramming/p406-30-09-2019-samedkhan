@@ -1,0 +1,22 @@
+//PARAMETERS
+@import './parameters';
+//VARIABLES
+@import './variables';
+//MIXINS
+@import './mixins';
+//FONTS
+@import './fonts/index';
+//PAGES
+@import './pages/index';
+//LAYOUTS
+@import './layouts/index';
+//COMPONENTS
+@import './components/index';
+
+
+#footer, #djs, #podcast, #shows{
+    background-color: $color-footer;
+}
+#events, #listeners{
+    background-color: $color-listeners-events;
+}

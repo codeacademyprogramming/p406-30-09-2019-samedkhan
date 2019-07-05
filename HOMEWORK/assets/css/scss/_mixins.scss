@@ -1,0 +1,39 @@
+@mixin section_header_h1 {
+    font-family: $font-navmenu-dejee_section-header_events-header; //oswald
+    letter-spacing: 10px;
+    font-size: 32px;
+    font-weight: 600;
+    color: $color-section_header_navitem-hover; //white
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 28px;
+}
+@mixin section_header_h1_before{
+    content: '';
+    background: $color-pink;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;    
+}
+@mixin section_header_desc {
+    font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+    color: $color-text;
+    font-size: 18.6px;
+    padding: 0 0 16px;
+    text-align: center;
+    line-height: 30px;    
+    margin: 0 auto;
+}
+
+@mixin column_header_h1{
+    font-family: "Oswald";
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 28px;
+}
+

@@ -1,0 +1,35 @@
+.events_item{
+    padding: 20px 5px;
+    .events_image{
+        img{
+            width: 100%;
+        }
+    }
+    .event_desc{
+
+    }
+    .events_desc{
+        background-color: white;
+        padding:24px;
+        ul{
+            line-height: 25px;
+            font-family: $font-navmenu-item_text_buttons_person-text_events-desc;
+            li{
+                span{
+                    color: $color-text;
+                    font-size:14px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-pink;
+                    font-size:20px;
+                    transition: $transition-hover;
+                    &:hover{
+                        color: $color-pink-hover;
+                        transition: $transition-hover;
+                    }
+                }
+            }
+        }
+    }
+}

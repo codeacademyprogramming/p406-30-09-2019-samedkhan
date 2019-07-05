@@ -1,0 +1,77 @@
+#header{
+    background-color: $color-matte;
+    
+    
+    .header_panel{
+        display:flex;
+        justify-content: space-between;
+                
+        .logo_side{
+            ul{
+                display:flex;
+                align-items: center;
+                li{
+                    display:block;
+                    text-align: center;
+                    
+                    &:last-child{
+                        padding: 20px 36px;
+                        margin-left: 20px;
+                        background-color: $color-dark;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $color-navmenu_item;
+                        font-family: $font-header_dejee;
+                        font-size:16px;
+                        letter-spacing: 1px;
+                        span{
+                            margin-right: 5px;
+                        }
+                        img{
+                            height: 30px;
+                             
+                        }
+                    }
+                    
+                 
+                    
+                }
+            }
+        }
+        .responsive_side{
+            ul{
+                display:flex;
+                align-items: center;
+                li{
+                    display:block;
+                    padding: 13px 30px;
+                    border-left: 1px solid $color-text;
+                    &:nth-child(4){
+                        background-color: $color-green;
+                        a{
+                            color: $color-section_header_navitem-hover;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $color-navmenu_item;
+                        font-size: 30px;
+                        transition: $transition-hover;
+                        &:hover{
+                            color: $color-section_header_navitem-hover;
+                            transition: $transition-hover;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+@media (max-width: 768px) {
+    .mobile-hidden{
+        display:none !important;
+    }
+}
